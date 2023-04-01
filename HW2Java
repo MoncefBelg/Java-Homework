@@ -1,0 +1,26 @@
+# Java-Homework
+package class03;
+
+import java.util.Scanner;
+
+public class HW2 {
+    public static void main(String[] args) {
+
+        Scanner input=new Scanner(System.in);
+        System.out.println("Enter the current time");
+        int hour= input.nextInt();
+
+        if (hour>=1 && hour<=11){
+            System.out.println("it's Morning");
+        }else if (hour>=12 && hour<=15) {
+            System.out.println("it's afternoon");
+        }else if (hour>=16 && hour<=20){
+            System.out.println("it's Evening");
+        }else if (hour>=21 && hour<=24) {
+            System.out.println("It's Night");
+        }else {
+            System.out.println("Not defined");
+        }
+
+    }
+}

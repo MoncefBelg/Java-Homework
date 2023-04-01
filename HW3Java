@@ -1,0 +1,38 @@
+# Java-Homework
+package class03;
+
+import java.util.Scanner;
+
+public class HW3 {
+    public static void main(String[] args) {
+
+        Scanner input=new Scanner(System.in);
+        System.out.println("Enter your birth Month");
+        String month= input.nextLine();
+
+        switch (month) {
+                case "December":    case "december":
+                case "January":     case "january":
+                case "February":    case "february":
+                System.out.println("You were born in season of Winter ");
+                break;
+                case "March":            case "march":
+                case "April":            case  "april":
+                case "May":              case "may":
+
+                System.out.println("You were born in season of Spring");
+                break;
+                case "June":             case "june":
+                case "July":             case "july":
+                case "August":           case "august":
+
+                System.out.println("You were born in season of Summer");
+                break;
+            default:
+                System.out.println("Wrong data entered");
+        }
+
+
+    }
+
+    }
